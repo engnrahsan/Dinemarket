@@ -34,9 +34,9 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-between items-center p-10  " style={{borderTop:"1px solid gray",marginTop:"40px"}}>
-        <p><p>Copyright © 2022 Dine Market</p></p>
-        <p><p>Design by. <span>Weird Design Studio</span></p></p>
-        <p><p>Code by. <span>shabrina12 on github</span></p></p>
+        <p>Copyright © 2022 Dine Market</p>
+        <p>Design by. <span>Weird Design Studio</span></p>
+        <p>Code by. <span>shabrina12 on github</span></p>
       </div>
     </footer>
   )
