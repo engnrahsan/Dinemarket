@@ -26,11 +26,11 @@ function Hero() {
             <Image alt="" src={"/images/img4.png"}width={90} height={90}/>
         </div>
       </div>
-      <div className="w-100 h-100 ">
+      <div className="w-100 h-100 relative ">
       
         <Image
-          src={"/images/heroimg.png"}
-          style={{background:"white",borderRadius:"50%"}}
+          src={"/images/heroimg.webp"}
+          style={{background:"lightpink",borderRadius:"50%"}}
           width={700}
           height={300}
           alt="image"

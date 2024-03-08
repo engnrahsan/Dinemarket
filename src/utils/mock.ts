@@ -3,6 +3,7 @@ import { Product } from "./type";
 import pic from "/public/images/event5.png"
 import pic1 from "/public/images/event3.png"
 import pic2 from "/public/images/event8.png"
+
 export const allproducts:Product[]=[
 
     {
