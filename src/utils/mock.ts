@@ -10,7 +10,7 @@ export const allproducts:Product[]=[
         id:1,
         name:"product 1",
         price:200,
-        category:"female",
+        category:"female", 
         image:pic,
 
     },
