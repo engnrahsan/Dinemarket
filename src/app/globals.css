@@ -1,27 +1,253 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+ 
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 }
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.card2 button{
+  font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: .25em;
+    color: #fff;
+    border: none;
+    background: #474747;
+    padding: 0.5rem 2.5rem;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+.promo-subtitle span{
+  font-size: 12px;
+    line-height: 15px;
+    letter-spacing: .1em;
+    color: #0062f5;
+    font-weight: 700;
+    text-align: center;
+}
+.promo-subtitle h2{
+  font-size: 32px;
+    line-height: 40px;
+    letter-spacing: .03em;
+    color: #212121;
+    font-weight: 700;
+    text-align: center;
+}
+.pro-card1 .product-name{
+  font-weight: 600;
+    color: #212121;
+    margin-top: 0.5rem;
+    line-height: 24px;
+    font-size: 1.1rem;
+    letter-spacing: .03em;
+}
+.pro-card1 .product-price{
+  font-weight: 600;
+  color: #212121;
+  margin-top: 0.5rem;
+  line-height: 24px;
+  font-size: 1.2rem;
+}
+.pro-card1{
+  flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    
+    
+}
+.pro-card1:hover{
+  transform: scale(1.1);
+  transition: transform .5s ease;
+}
+.sec3row1{
+  display: flex;
+  justify-content: end;
+  padding: 0 8rem 2rem;
+  background: linear-gradient(180deg,#fff 50%,#fbfcff 0);
+}
+.sec3row1 h1{
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 55px;
+  letter-spacing: .03em;
+  color: #212121;
+  width: 46%;
+}
+.sec3col1 h3{
+  font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 20px;
+    letter-spacing: .03em;
+    color: #212121;
+    margin-bottom: 1rem;
+}
+.sec3col1 p{
+  font-weight: 300;
+    font-size: 1rem;
+    line-height: 22px;
+    letter-spacing: .05em;
+    color: #212121;
+}
+.sec3col4 p{
+  font-weight: 300;
+    font-size: 1rem;
+    line-height: 26px;
+    text-align: justify;
+    color: #212121;
+}
+.sec3col4 .btn{
+  font-size: .875rem;
+  width: 46%;
+  font-family: Sora,sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+  background-color: #212121;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+.sec3cols4{
+  background: linear-gradient(#fff 50%,#fbfcff 0);
+}
+.mysizes span{
+ text-align: center;
+  background: white;
+  width: 40px;
+  height: 44px;
+  border-radius: 50%;
+ 
+ 
+}
+.mysizes span:hover{
+  box-shadow: 2px 3px 4px gray;
+}
+.mycartbtn button {
+  font-size: .875rem;
+  width: 60%;
+  font-family: Sora,sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+  background-color: #212121;
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  justify-content: center;
+  gap: 0.5rem;
+  color: #fff;
+
+}
+.newsletter h1{
+
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 40px;
+    letter-spacing: .03em;
+    color: #212121;
+}
+
+.newsletter p{
+  margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 26px;
+    color: #212121;
+
+}
+.newletterchild button{
+  padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 16px;
+    width: 50%;
+    border: 3px solid;
+}
+.footercontent ul li{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #666;
+}
+.footercontent h3{
+  font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 19px;
+    letter-spacing: .02em;
+    color: #666;
 }
