@@ -32,7 +32,7 @@ function Footer() {
           </h3>
         <ul><li>Whatsapp</li><li>Support 24h</li></ul>
         </div>
-      </div>
+      </div> 
       <div className="flex justify-between items-center p-10  " style={{borderTop:"1px solid gray",marginTop:"40px"}}>
         <p>Copyright © 2022 Dine Market</p>
         <p>Design by. <span>Weird Design Studio</span></p>

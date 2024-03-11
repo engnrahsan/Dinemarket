@@ -66,14 +66,7 @@
   }
 }
  
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+ 
 .card2 button{
   font-weight: 700;
     font-size: 17px;
